@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEYOND THE FILES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://scontent.fcok10-3.fna.fbcdn.net/v/t39.30808-6/584546308_122103601335121930_377685647764792435_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=0el3P6T_djEQ7kNvwFa0Fbh&_nc_oc=AdkSM6rUgw3hEc1p8azpqxhvDD-SEVmy_JKZ7XihZaQc34lewQ1b1tLgG-Nn01Xzt5N7J04nt8IZEb8cQ44JdcqE&_nc_zt=23&_nc_ht=scontent.fcok10-3.fna&_nc_gid=ySrGQVgKa44qdbEGW62tiw&oh=00_AfhY6WPICCi2YnOFdRn8MN4ImsANBLpeAMJ2BPqY91Pojg&oe=69277ECF" alt="viktorkarlos_ logo" class="avatar">
+            <div>
+                <h1 class="title">BEYOND THE FILES</h1>
+                <p class="subtitle">Entertainment News & Content Creator</p>
+            </div>
+        </header>
+
+        <nav class="links">
+            <a href="https://www.instagram.com/beyondthefiles_/" target="_blank" rel="noopener noreferrer" class="link-button">
+                <i data-lucide="instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61583657923193" target="_blank" rel="noopener noreferrer" class="link-button">
+                <i data-lucide="facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.youtube.com/@BEYONDTHEFILES0" target="_blank" rel="noopener noreferrer" class="link-button">
+                <i data-lucide="youtube"></i>
+                <span>YouTube</span>
+            </a>
+        </nav>
+        
+        <footer class="footer">
+            <p>© 2024 BEYOND THE FILES</p>
+        </footer>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script type="module">
+        const firebaseConfig = {
+          apiKey: "AIzaSyAzW0REtax9JAU7LLlIu_fLp8frEB2nxzQ",
+          authDomain: "studio-2589037917-9030d.firebaseapp.com",
+          projectId: "studio-2589037917-9030d",
+          storageBucket: "studio-2589037917-9030d.firebasestorage.app",
+          messagingSenderId: "915221579472",
+          appId: "1:915221579472:web:9e7a6a4b7682eb812cc0d5",
+          measurementId: "G-R8KCTXK0HW"
+        };
+
+        if (typeof window !== 'undefined' && !window.firebase) {
+            const appScript = document.createElement('script');
+            appScript.src = "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+            appScript.onload = () => {
+                const analyticsScript = document.createElement('script');
+                analyticsScript.src = "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+                analyticsScript.onload = () => {
+                    const app = window.firebase.initializeApp(firebaseConfig);
+                    window.firebase.analytics(app);
+                };
+                document.head.appendChild(analyticsScript);
+            };
+            document.head.appendChild(appScript);
+        }
+    </script>
+</body>
+</html>
